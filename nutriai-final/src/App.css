@@ -1,7 +1,10 @@
+/* Bu dosyadaki çoğu kural Vite başlangıç şablonuna aittir. */
+/* İsterseniz projenize uymayanları silebilirsiniz. */
+
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; Bu kuralı kaldırarak sayfanızın tam genişlikte olmasını sağlayabilirsiniz. */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; Bu kuralı da kaldırıp sayfa bazlı boşlukları kendiniz yönetebilirsiniz. */
   text-align: center;
 }
 
@@ -11,11 +14,12 @@
   will-change: filter;
   transition: filter 300ms;
 }
+/* Logo hover efektini yeni ana rengimizle güncelledim */
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #2E7D32aa); /* Yeni primary rengimiz */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #82e086aa); /* Daha açık bir yeşil tonu */
 }
 
 @keyframes logo-spin {
