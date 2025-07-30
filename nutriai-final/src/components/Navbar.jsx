@@ -12,24 +12,10 @@ const Navbar = () => {
         </Link>
         
         <div className="hidden md:flex items-center space-x-6">
-          <NavLink 
-            to="/" 
-            className={({ isActive }) => isActive ? "text-brand-purple font-semibold" : "text-gray-600 hover:text-brand-purple"}
-          >
-            Ana Sayfa
-          </NavLink>
-          <NavLink 
-            to="/ozellikler" // Yeni linki ekledik
-            className={({ isActive }) => isActive ? "text-brand-purple font-semibold" : "text-gray-600 hover:text-brand-purple"}
-          >
-            Özellikler
-          </NavLink>
-          <NavLink 
-            to="/hakkimizda" 
-            className={({ isActive }) => isActive ? "text-brand-purple font-semibold" : "text-gray-600 hover:text-brand-purple"}
-          >
-            Hakkımızda
-          </NavLink>
+          <NavLink to="/" className={({ isActive }) => isActive ? "text-brand-purple font-semibold" : "text-gray-600 hover:text-brand-purple"}>Ana Sayfa</NavLink>
+          <NavLink to="/ozellikler" className={({ isActive }) => isActive ? "text-brand-purple font-semibold" : "text-gray-600 hover:text-brand-purple"}>Özellikler</NavLink>
+          <NavLink to="/blog" className={({ isActive }) => isActive ? "text-brand-purple font-semibold" : "text-gray-600 hover:text-brand-purple"}>Blog</NavLink> {/* Yeni link */}
+          <NavLink to="/hakkimizda" className={({ isActive }) => isActive ? "text-brand-purple font-semibold" : "text-gray-600 hover:text-brand-purple"}>Hakkımızda</NavLink>
           
           <Link to="/#kayit-formu" className="bg-brand-purple text-white py-2 px-4 rounded-lg hover:opacity-90">
             Erken Erişim
