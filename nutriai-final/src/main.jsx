@@ -5,23 +5,26 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
+import FeaturesPage from './pages/FeaturesPage.jsx'; // 1. Import et
 import './index.css';
 
-// Hangi URL'de hangi sayfanın gösterileceğini belirleyen yapı
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />, // Ana layout (Navbar ve Footer'ı içerir)
+    element: <App />,
     children: [
       {
-        index: true, // Ana sayfa (/)
+        index: true,
         element: <HomePage />,
       },
       {
-        path: 'hakkimizda', // "/hakkimizda" URL'i
+        path: 'hakkimizda',
         element: <AboutPage />,
       },
-      // İleride buraya /ozellikler, /blog gibi yeni sayfalar eklenecek
+      {
+        path: 'ozellikler', // 2. Yeni rotayı ekle
+        element: <FeaturesPage />,
+      },
     ],
   },
 ]);
