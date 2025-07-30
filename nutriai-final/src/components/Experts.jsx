@@ -1,15 +1,15 @@
-// src/components/Experts.jsx
+// src/components/Experts.jsx - DÜZELTİLMİŞ KOD
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; 
 
-// Placeholder ikon, ileride daha iyileriyle değiştirilebilir
 const CheckIcon = () => (
   <svg className="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
 );
 
 const Experts = () => {
   return (
+    // 'section' etiketini 'motion.section' olarak değiştirdik ve animasyonları ekledik
     <motion.section 
       className="bg-white py-20"
       initial={{ opacity: 0, y: 50 }}
