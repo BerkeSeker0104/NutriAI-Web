@@ -1,7 +1,9 @@
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Trust from './components/Trust'
-import HowItWorks from './components/HowItWorks' // 1. Yeni bileşeni import et
+import HowItWorks from './components/HowItWorks'
+import CtaForm from './components/CtaForm'
+import Footer from './components/Footer' // 1. Yeni bileşeni import et
 
 function App() {
   return (
@@ -10,8 +12,10 @@ function App() {
       <main>
         <Hero />
         <Trust />
-        <HowItWorks /> {/* 2. Yeni bileşeni buraya ekle */}
+        <HowItWorks />
+        <CtaForm />
       </main>
+      <Footer /> {/* 2. Yeni bileşeni <main> etiketinden sonra ekle */}
     </div>
   )
 }
