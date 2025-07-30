@@ -6,8 +6,10 @@ import App from './App.jsx';
 import HomePage from './pages/HomePage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import FeaturesPage from './pages/FeaturesPage.jsx';
-import BlogPage from './pages/BlogPage.jsx'; // 1. Import et
-import SinglePostPage from './pages/SinglePostPage.jsx'; // 2. Import et
+import BlogPage from './pages/BlogPage.jsx';
+import SinglePostPage from './pages/SinglePostPage.jsx';
+import FaqPage from './pages/FaqPage.jsx'; // 1. Import et
+import LegalPage from './pages/LegalPage.jsx'; // 2. Import et
 import './index.css';
 
 const router = createBrowserRouter([
@@ -18,8 +20,10 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: 'hakkimizda', element: <AboutPage /> },
       { path: 'ozellikler', element: <FeaturesPage /> },
-      { path: 'blog', element: <BlogPage /> }, // 3. Ana blog rotası
-      { path: 'blog/:slug', element: <SinglePostPage /> }, // 4. Tekil yazı rotası
+      { path: 'blog', element: <BlogPage /> },
+      { path: 'blog/:slug', element: <SinglePostPage /> },
+      { path: 'sss', element: <FaqPage /> }, // 3. Yeni rotayı ekle
+      { path: 'yasal', element: <LegalPage /> }, // 4. Yeni rotayı ekle
     ],
   },
 ]);
